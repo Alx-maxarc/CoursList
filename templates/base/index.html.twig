@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Partage Ta Liste !{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper {display: flex; flex-direction: column; justify-content: center }
+    .block { display: flex; justify-content: space-around }
+</style>
+
+<div class="example-wrapper">
+    <div class='block'>
+    <h1>Partage ta liste ! ✅</h1>
+    <a href="{{ path('app_course_liste') }}">Connexion</a>
+    </div>
+    <div class="exemple-wrapper">
+    <h3>Pour que plus jamais ton coloc n'oublie de prendre du lait.</h3>
+    <h3>Pour que plus jamais ton collegue n'oublie de faire la mise en page.</h3>
+    <h4> Que ce soit pour ton travail, pour tes courses ou même pour ta wish liste de Noël : Partage ta liste ! </h4>
+    </div>
+</div>
+{% endblock %}
